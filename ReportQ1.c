@@ -5,6 +5,7 @@ int main(void) { // 메인함수호출
 	int x, y, result;     // 정수형x, y, result변수선언
 
 	printf("수식을 입력하시오\n (예: 2 + 5) \n >>");
+	//scanf가 안전하지 않으니, scanf_s 함수로 변경
 	scanf_s("%d %c %d", &x, &op, sizeof(op), &y);
 
 	//정수형문자형정수형자료를입력받아각각x,op,y변수에저장
